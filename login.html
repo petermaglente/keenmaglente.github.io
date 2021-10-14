@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Login Keen Outdoor</title>
+</head>
+<body background="Images/background1.jpg">
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo_container">
+                <h2>keen<span>Outdoor</span></h2>
+            </div>
+            <ul class="navigation">
+                <a href="index.html"><li>Home</li></a>
+                <a href="cataloguepage.html"><li>Catalogue Page</li></a>
+                <a href="cart.html"><li>Cart</li></a>
+                <a href="login.html"><li>Login</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+    <div class="sidebar">
+        <ul>
+            <li><a href="about.html"><i class="fas fa-home"></i>About</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>Shop</a></li>
+            <li><a href="#"><i class="fas fa-address-card"></i>Contact Us</a></li>
+            <li><a href="#"><i class="fas fa-project-diagram"></i>Developer</a></li>
+            
+        </ul> 
+        
+        </div>
+    </div>
+     <div class="mainlogo">
+    <a href="index.html"><img src="Images/keen-logo.png" alt="">
+    </a></div>
+     <div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        
+      
+   
+    <div class="Social-icons">
+           <img src="Images/fb.png">
+            <img src="Images/gp.png">
+            <img src="Images/tw.png">
+        </div>
+    
+    <form id="login" class="input-group">
+    <input type="text" class="input-field" placeholder="Enter Email" required>
+    <input type="text" class="input-field" placeholder="Enter Password" required>
+    <input type="checkbox" class="check-box"><span>Remember Password</span><button type="submit" class="submit-btn">Log In</button></form>
+    <form id="register" class="input-group">
+    <input type="text" class="input-field" placeholder="Enter Email" required>
+    <input type="text" class="input-field" placeholder="Enter Password" required>
+    <input type="checkbox" class="check-box"><span>I Agree</span><button type="submit" class="submit-btn">Register</button></form>
+      </div>
+    </div>
+   <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+       function register(){
+           x.style.left= "-400px";
+           y.style.left= "50px";
+           z.style.left= "110px";
+       }
+        function login(){
+           x.style.left= "50px";
+           y.style.left= "450px";
+           z.style.left= "0";
+       }
+    </script>
+</body>
+</html>  
